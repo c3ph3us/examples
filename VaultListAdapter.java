@@ -18,12 +18,23 @@ public class VaultListAdapter extends BaseAdapter {
 
     /** list holding adapter items */
     private List<VaultItem> _vaultItemList;
+    
+    public VaultListAdapter(){
+        /** initiate list with new empty ArrayList
+         * if class instance is created without any parameter  */
+        _vaultItemList = new ArrayList();
+    }
 
     /** constructor for adapter */
     public VaultListAdapter(List<VaultItem> vaultItemList) {
         _vaultItemList = vaultItemList;
     }
-
+   
+   /** to add item to our list */
+    public void addVaultItem(VaultItem vaultItem) {
+        _vaultItemList.add(vaultItem);
+    }
+    
     @Override
     public int getCount() {
         return _vaultItemList.size();
