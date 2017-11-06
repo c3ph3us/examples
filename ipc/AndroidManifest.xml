@@ -1,0 +1,6 @@
+       <!--
+         expose service in manifest application block 
+        -->
+        <service android:name="pl.ceph3us.projects.android.common.services.TestService"
+                 android:exported="true"
+                 android:enabled="true"/>
